@@ -1,0 +1,156 @@
+:root{
+    --bg-cloud: #f5f5da;
+    --bg-sun: #fff;
+    --bg-light-body: #d9dfe3;
+    --bg-dark-body: #1d2234;
+    --bg-light-checkbox-one: #bfd6bb;
+    --bg-light-checkbox-two: #90d1c7;
+    --bg-dark-checkbox-one: #73abb9;
+    --bg-dark-checkbox-two: #335a63;
+}
+
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toggle{
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+    height: 60px;
+    border-radius: 50px;
+    right: -750px;
+    top: -340px;
+}
+
+input{
+    display: none;
+}
+
+.toggle i{
+    width: 50%;
+    line-height: 60px;
+    text-align: center;
+    font-size: 30px;
+    z-index: 1;
+}
+
+.toggle .ball{
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    margin: 6px 7.2px;
+    border-radius: 50%;
+}
+
+
+.light{
+    background: #fafafa;
+}
+
+.light .toggle{
+    background: linear-gradient(145deg, #e1e1e1, #fff);
+    box-shadow: 3px 3px 4px #e6e6e6,
+    -3px -3px 4px #ffffff;
+}
+
+.light .toggle .bi-cloud-sun-fill{
+    color: #fafafa;
+}
+
+.light .toggle .bi-cloud-moon-fill{
+    color: #151d2a;
+}
+
+.light .toggle .ball {
+    background: #151d2a;
+}
+
+
+.dark{
+    background: #151d2a;
+}
+
+.dark .toggle{
+    background: #151d2a;
+    box-shadow: 3px 3px 3px #0e131b,
+    -3px -3px 3px #1c2739;
+}
+
+.dark .toggle .bi-cloud-sun-fill{
+    color: #fafafa;
+}
+
+.dark .toggle .bi-cloud-moon-fill{
+    color: #151d2a;
+}
+
+.dark .toggle .ball {
+    background: #fafafa;
+    transform: translateX(60px);
+}
+@import url('https://fonts.googleapis.com/css2?family=Coiny&display=swap');
+.content2 .text h3{
+    color: #fafafa;
+    right: 100px;
+    margin-right: 300px;
+    font-family: 'Coiny', cursive;
+    font-size: 18px;
+    margin-top: -15px;
+    font-weight: 200;
+    
+}
+
+
+
+html, body {
+ 
+    overflow: hidden;
+   
+    padding: 0;
+   
+    margin: 0;
+   
+    
+   
+  } 
+   
+  canvas {
+   
+    position: absolute;
+   
+    width: 100%;
+   
+    height: 100%;
+   
+  }
+   
+  canvas {
+    z-index: 1;
+    display: block;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    animation: heart 1.2s ease infinite;
+   
+  }
+  @keyframes heart {
+    0% {
+      transform: scale(1);
+    }
+    20% {
+      transform: scale(0.8);
+    }
+    100%{
+      transform: scale(1);
+    }
+  }
